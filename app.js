@@ -16,11 +16,13 @@ const refs = {
   refs.hotSpotBtn.addEventListener('click', onHotSpotBtnClick)
   function onHotSpotBtnClick() {
       refs.videoBackdrop.classList.remove('is-hidden')
+      refs.hotSpotBtn.classList.add('is-hidden')
   }
 
   refs.videoCloseBtn.addEventListener('click', onVideoCloseBtnClick)
   function onVideoCloseBtnClick() {
       refs.videoBackdrop.classList.add('is-hidden')
+      refs.hotSpotBtn.classList.remove('is-hidden')
       refs.video.pause() 
   }
 

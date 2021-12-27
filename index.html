@@ -8,50 +8,40 @@
     <title>mls cup</title>
 </head>
 <body>
-    <img class="content" src="/images/content.jpg" alt="site content">
-    <img class="content" src="/images/content.jpg" alt="site content">
+    <img class="content" src="./images/content.jpg" alt="site content">
+    <img class="content" src="./images/content.jpg" alt="site content">
     <div class="mlsCup">
         <!-- cup hoist -->
         <div class="overlay">
         </div>
-        <img class="cupHoist" src="/images/cup_hoist.png" alt="cup hoist">
-        <img class="confetti" src="/images/confetti.png" alt="confetti">
+        <img class="cupHoist" src="./images/cup_hoist.png" alt="cup hoist">
+        <img class="confetti" src="./images/confetti.png" alt="confetti">
         
-        <!-- doors -->
-        <img class="leftDoor" src="/images/left_door.png" alt="left part of door width funs">
-        <img class="rightDoor" src="/images/right_door.png" alt="right part of door width funs">
-        <ul class="sloganList">
-            <li>
-                <p>one</p>
-            </li>
-            <li>
-                <p>game</p>
-            </li>
-            <li>
-                <p>to glory</p>
-            </li>
-        </ul>
-        <img class="leftEmblem" src="/images/left_emblem.png" alt="emblem of first team">
-        <img class="rightEmblem" src="/images/right_emblem.png" alt="emblem of second team">
-
+        
         <!-- banner -->
-        <img class="banner" src="/images/banner.png" alt="banner width cup & emblem & text:live on F51 + UniMás">
-        <div class="banner__info">
-            <div class="banner__teams">
-                <p>Portland Timbers</p>
-                <p>vs</p>
-                <p>FC Dallas</p>
+        <div class="banner">
+            <img class="banner__pic" src="./images/banner.png" alt="banner width cup">
+            <div class="bannerInfo">
+                <div class="bannerInfo__teams">
+                    <p>Portland Timbers</p>
+                    <p>vs</p>
+                    <p>FC Dallas</p>
+                </div>
+                <div class="bannerInfo__dateInfo">
+                    <p class="bannerInfo__date">December 6<sup>th</sup></p>
+                    <img class="bannerInfo__dateStrip" src="./images/vert_strip.png" alt="vertical strip">
+                    <p class="bannerInfo__time">3pm et</p>
+                </div>
+                <img class="bannerInfo__liveOn" src="./images/live_on_f51_umimas.png" alt="live on F51 + UniMás">
             </div>
-            <div class="banner__dateInfo">
-                <p class="banner__date">December 6th</p>
-                <img class="banner__dateStrip" src="/images/vert_strip.png" alt="vertical strip">
-                <p class="banner__time">3pm et</p>
-            </div>
+            <img class="banner__emblem" src="./images/mlscup_emblem.png" alt="mlscup emblem">
+            <button class="button hotSpotButton">
+                <img class="hotSpotButton__picture" src="./images/hot_spot_btn.png" alt="hot spot batton">
+                <p class="hotSpotButton__caption">watch tv spot</p>
+            </button>
         </div>
-        <button class="button hotSpotButton">
-            <img class="hotSpotButton__picture" src="/images/hot_spot_btn.png" alt="hot spot batton">
-            <p class="hotSpotButton__caption">watch tv spot</p>
-        </button>
+        <div class="banner__overlay is-hidden">
+        </div>
         
         <!-- video -->
         <div class="videoBackdrop is-hidden">
@@ -59,24 +49,43 @@
                 <video 
                 class="video"
                 controls
-                poster="/images/video_previev.png">
+                poster="./images/video_previev.png">
                 <source 
-                    src="video/video.mp4"
+                    src="./video/video.mp4"
                     type="video/mp4"
                 /> 
                 Sorry, your browser doesn't support this video.
             </video>
             <button class="button videoPlayButton">
-                <img class="videoPlayButton__picture" src="/images/video_play-btn.png" alt="video play batton">
+                <img class="videoPlayButton__picture" src="./images/video_play-btn.png" alt="video play batton">
             </button>
             <button class="button videoCloseButton">
-                <img class="videoCloseButton__picture" src="/images/video_close-btn.png" alt="video close batton">
+                <img class="videoCloseButton__picture" src="./images/video_close-btn.png" alt="video close batton">
             </button>
             </div>           
         </div>
 
+        <!-- doors -->
+        <div class="doors is-hidden">
+            <img class="leftDoor" src="./images/left_door.png" alt="left part of door width funs">
+            <img class="rightDoor" src="./images/right_door.png" alt="right part of door width funs">
+            <ul class="sloganList">
+                <li class="sloganList__item">
+                    <p>one</p>
+                </li>
+                <li class="sloganList__item">
+                    <p>game</p>
+                </li>
+                <li class="sloganList__item">
+                    <p>to glory</p>
+                </li>
+            </ul>
+            <img class="leftEmblem" src="./images/left_emblem.png" alt="emblem of first team">
+            <img class="rightEmblem" src="./images/right_emblem.png" alt="emblem of second team">
+        </div>
+
         <button class="button mlsCupCloseButton">
-            <img class="mlsCupCloseButton__picture" src="/images/main_close_btn.png" alt="mlscup close batton">
+            <img class="mlsCupCloseButton__picture" src="./images/main_close_btn.png" alt="mlscup close batton">
         </button>
         
     </div>

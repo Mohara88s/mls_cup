@@ -5,7 +5,7 @@
     position: absolute;
     top: 0;
     width: 100%;
-    height: 100vh;
+    height: 51.5vw;
     border: 1px solid red;
     // overflow: hidden;
 }
@@ -23,93 +23,150 @@
     bottom: 0;
     left: 53%;
     transform: translate(-50%,0);
+    width: 29vw;
 }
 .confetti{
     position: absolute;
     bottom: -15%;
     left: 53%;
     transform: translate(-50%,0);
+    width: 107vw;
 }
 .leftDoor {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
+    width: 100%;
 }
 .rightDoor {
     position: absolute;
-    bottom: 0;
+    top: 0;
     left: 0;
+    width: 100%;
 }
 .sloganList{
     position: absolute;
-    bottom: 50%;
-    left: 50%;
+    bottom: 46%;
+    left: 47.5%;
     transform: translate(-50%,+50%);
     list-style: none;
-    color: $main-color;
-    font-family: $main-font;
-    font-size: 5vw;
-    text-transform: uppercase;
-    text-align: center;
+    .sloganList__item {
+        color: $main-color;
+        font-family: $main-font;
+        font-size: 10.5vw;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 0.8;
+    }
+    .sloganList__item:first-child {
+        font-size: 15vw;
+        line-height: 0.7;
+    }
+    .sloganList__item:last-child {
+        font-size: 6vw;
+    }
+    
 }
 .leftEmblem {
     position: absolute;
     bottom: 53%;
     left: 9%;
     transform: translate(0,+50%);
+    width: 20vw;
 }
 .rightEmblem {
     position: absolute;
     bottom: 53%;
     right: 9%;
     transform: translate(0,+50%);
+    width: 20vw;
 }
-.banner {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-}
-.banner__info {
+.banner__pic {
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+}
+.bannerInfo{
+    position: absolute;
+    top: 2%;
+    left: 1.5%;
 }
 
-.banner__teams { p {
+.bannerInfo__teams { 
+    margin-bottom: 2vw;
+    p {
     background-color: $main-color;
-    margin-bottom: 1vw;
+    width: fit-content;
+    margin-bottom: 0.5vw;
+    padding-top: 0.5vw;
+    padding-right: 2.5vw;
     font-family: $main-font;
-    font-size: 2vw;
+    font-size: 3.5vw;
+    line-height: 0.8;
     text-transform: uppercase;
+    text-align: initial;
+    vertical-align: middle;
 }
 }
 
-.banner__dateInfo {
+.bannerInfo__dateInfo {
+    display: flex;
+    margin-bottom: 1.5vw;
     p {
     color: $main-color;
     font-family: $main-font;
     font-size: 2vw;
-    text-transform: uppercase;
+    
     }
-    & .banner__date {
+    & .bannerInfo__date {
         font-family: $additional-font;
     }
-}
-.hotSpotButton {
-    position: absolute;
-    top: 20%;
-    right: 20%;
-    background: none;
-    border: none;
-    &__caption {
-        color: $main-color;
-        font-family: $main-font;
-        font-size: 2vw;
+    & .bannerInfo__dateStrip {
+        height: 1.5vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+    & .bannerInfo__time {
         text-transform: uppercase;
     }
 }
+.bannerInfo__liveOn {
+    width: 26vw;
+}
+.banner__emblem {
+    position: absolute;
+    bottom: 1.5%;
+    left: 1.5%;
+    width: 22vw;
+    }
+.hotSpotButton {
+    position: absolute;
+    top: 10%;
+    right: 12%;
+    background: none;
+    border: none;
 
+    &__picture{
+        margin-bottom: 0.8vw;
+    }
+
+    &__caption {
+        color: $main-color;
+        font-family: $main-font;
+        font-size: 1.8vw;
+        line-height: 0.8;
+        text-transform: uppercase;
+    }
+}
+.banner__overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #00000080;
+    position: absolute;
+    top:0;
+    left: 0;
+}
 .videoBackdrop {
     position: absolute;
     top: 0;
