@@ -13,8 +13,8 @@
     <div class="mlsCup">
         <!-- cup hoist -->
         <div class="overlay">
+            <img class="cupHoist" src="./images/cup_hoist.png" alt="cup hoist">
         </div>
-        <img class="cupHoist" src="./images/cup_hoist.png" alt="cup hoist">
         <img class="confetti" src="./images/confetti.png" alt="confetti">
         
         
@@ -42,33 +42,17 @@
         </div>
         <div class="banner__overlay is-hidden">
         </div>
-        
-        <!-- video -->
-        <div class="videoBackdrop is-hidden">
-            <div class="videoBox">
-                <video 
-                class="video"
-                controls
-                poster="./images/video_previev.png">
-                <source 
-                    src="./video/video.mp4"
-                    type="video/mp4"
-                /> 
-                Sorry, your browser doesn't support this video.
-            </video>
-            <button class="button videoPlayButton">
-                <img class="videoPlayButton__picture" src="./images/video_play-btn.png" alt="video play batton">
-            </button>
-            <button class="button videoCloseButton">
-                <img class="videoCloseButton__picture" src="./images/video_close-btn.png" alt="video close batton">
-            </button>
-            </div>           
-        </div>
 
         <!-- doors -->
-        <div class="doors is-hidden">
-            <img class="leftDoor" src="./images/left_door.png" alt="left part of door width funs">
-            <img class="rightDoor" src="./images/right_door.png" alt="right part of door width funs">
+        <div class="doors">
+            <div class="leftDoor">
+                <img class="leftDoor__pic" src="./images/left_door.png" alt="left part of door width funs">
+                <img class="leftDoor__emblem" src="./images/left_emblem.png" alt="emblem of first team">
+            </div>
+            <div class="rightDoor">
+                <img class="rightDoor__pic" src="./images/right_door.png" alt="right part of door width funs">
+                <img class="rightDoor__emblem" src="./images/right_emblem.png" alt="emblem of second team">
+            </div>
             <ul class="sloganList">
                 <li class="sloganList__item">
                     <p>one</p>
@@ -80,8 +64,28 @@
                     <p>to glory</p>
                 </li>
             </ul>
-            <img class="leftEmblem" src="./images/left_emblem.png" alt="emblem of first team">
-            <img class="rightEmblem" src="./images/right_emblem.png" alt="emblem of second team">
+        </div>
+
+        <!-- video -->
+        <div class="videoBackdrop is-hidden">
+            <div class="videoBox">
+                <video 
+                class="video"
+                controls
+                poster="./images/video_previev.png">
+                <source 
+                    src="video/video.mp4"
+                    type="video/mp4"
+                /> 
+                Sorry, your browser doesn't support this video.
+            </video>
+            <button class="button videoPlayButton">
+                <img class="videoPlayButton__picture" src="./images/video_play-btn.png" alt="video play batton">
+            </button>
+            <button class="button videoCloseButton">
+                <img class="videoCloseButton__picture" src="./images/video_close-btn.png" alt="video close batton">
+            </button>
+            </div>           
         </div>
 
         <button class="button mlsCupCloseButton">
