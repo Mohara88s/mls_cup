@@ -81,7 +81,7 @@
     );
 
     animation-name: leftdoor;
-    animation-duration: 8000ms;
+    animation-duration: 10500ms;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
     animation-delay: 3000ms;
@@ -90,10 +90,10 @@
     0%{
       transform: translate(-100%,0);
     }
-    20%{
+    15%{
         transform: translate(0,0);
     }
-    80%{
+    85%{
         transform: translate(0,0);
     }
     100%{
@@ -115,7 +115,7 @@ width: 100%;
     animation-duration: 1000ms;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-    animation-delay: 6000ms;
+    animation-delay: 8000ms;
 
     @keyframes emblem {
         0%{
@@ -141,7 +141,7 @@ width: 100%;
     );
 
     animation-name: rightdoor;
-    animation-duration: 8000ms;
+    animation-duration: 10500ms;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
     animation-delay: 3000ms;
@@ -150,10 +150,10 @@ width: 100%;
     0%{
       transform: translate(+100%,0);
     }
-    20%{
+    15%{
         transform: translate(0,0);
     }
-    80%{
+    85%{
         transform: translate(0,0);
     }
     100%{
@@ -177,7 +177,7 @@ width: 100%;
     animation-duration: 1000ms;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-    animation-delay: 6000ms;
+    animation-delay: 8000ms;
 }
 .sloganList{
     position: absolute;
@@ -198,19 +198,19 @@ width: 100%;
         line-height: 0.7;
         transform: translate(0,-300%);
         animation-name: sloganOne;
-        animation-duration: 4000ms;
+        animation-duration: 6000ms;
         animation-timing-function: linear;
         animation-fill-mode: forwards;
-        animation-delay: 4500ms;
+        animation-delay: 5000ms;
 
     @keyframes sloganOne {
         0%{
         transform: translate(0,-300%);
         }
-        25%{
+        20%{
             transform: translate(0,0);
         }
-        85%{
+        90%{
             transform: translate(0,0);
         }
         100%{
@@ -223,16 +223,16 @@ width: 100%;
         line-height: 0.8;
         transform: translate(0,+400%);
         animation-name: sloganTwo;
-        animation-duration: 4000ms;
+        animation-duration: 5500ms;
         animation-timing-function: linear;
         animation-fill-mode: forwards;
-        animation-delay: 4750ms;
+        animation-delay: 6000ms;
 
     @keyframes sloganTwo {
         0%{
         transform: translate(0,+400%);
         }
-        25%{
+        20%{
             transform: translate(0,0);
         }
         85%{
@@ -248,19 +248,19 @@ width: 100%;
         transform: translate(0,+400%);
 
         animation-name: sloganThre;
-        animation-duration: 4000ms;
+        animation-duration: 5000ms;
         animation-timing-function: linear;
         animation-fill-mode: forwards;
-        animation-delay: 5000ms;
+        animation-delay: 7000ms;
 
     @keyframes sloganThre {
         0%{
         transform: translate(0,+400%);
         }
-        25%{
+        20%{
             transform: translate(0,0);
         }
-        85%{
+        80%{
             transform: translate(0,0);
         }
         100%{
@@ -276,7 +276,7 @@ width: 100%;
     animation-duration: 100ms;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
-    animation-delay: 5000ms;
+    animation-delay: 7000ms;
     
     @keyframes banner {
         0%{
@@ -390,6 +390,7 @@ width: 100%;
     left: 50%;
     transform: translate(-50%,-50%);
 }
+
 .videoPlayButton {
     position: absolute;
     top: 50%;

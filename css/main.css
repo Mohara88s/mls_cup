@@ -413,8 +413,8 @@ p {
   background-image: linear-gradient(to right, #00000033, #00000000);
   -webkit-animation-name: leftdoor;
           animation-name: leftdoor;
-  -webkit-animation-duration: 8000ms;
-          animation-duration: 8000ms;
+  -webkit-animation-duration: 10500ms;
+          animation-duration: 10500ms;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-fill-mode: forwards;
@@ -428,11 +428,11 @@ p {
     -webkit-transform: translate(-100%, 0);
             transform: translate(-100%, 0);
   }
-  20% {
+  15% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
-  80% {
+  85% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
@@ -447,11 +447,11 @@ p {
     -webkit-transform: translate(-100%, 0);
             transform: translate(-100%, 0);
   }
-  20% {
+  15% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
-  80% {
+  85% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
@@ -481,8 +481,8 @@ p {
           animation-timing-function: linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 6000ms;
-          animation-delay: 6000ms;
+  -webkit-animation-delay: 8000ms;
+          animation-delay: 8000ms;
 }
 
 @-webkit-keyframes emblem {
@@ -522,8 +522,8 @@ p {
   background-image: linear-gradient(to left, #00000033, #00000000);
   -webkit-animation-name: rightdoor;
           animation-name: rightdoor;
-  -webkit-animation-duration: 8000ms;
-          animation-duration: 8000ms;
+  -webkit-animation-duration: 10500ms;
+          animation-duration: 10500ms;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-fill-mode: forwards;
@@ -537,11 +537,11 @@ p {
     -webkit-transform: translate(100%, 0);
             transform: translate(100%, 0);
   }
-  20% {
+  15% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
-  80% {
+  85% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
@@ -556,11 +556,11 @@ p {
     -webkit-transform: translate(100%, 0);
             transform: translate(100%, 0);
   }
-  20% {
+  15% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
-  80% {
+  85% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
@@ -592,8 +592,8 @@ p {
           animation-timing-function: linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 6000ms;
-          animation-delay: 6000ms;
+  -webkit-animation-delay: 8000ms;
+          animation-delay: 8000ms;
 }
 
 .sloganList {
@@ -620,14 +620,14 @@ p {
           transform: translate(0, -300%);
   -webkit-animation-name: sloganOne;
           animation-name: sloganOne;
-  -webkit-animation-duration: 4000ms;
-          animation-duration: 4000ms;
+  -webkit-animation-duration: 6000ms;
+          animation-duration: 6000ms;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 4500ms;
-          animation-delay: 4500ms;
+  -webkit-animation-delay: 5000ms;
+          animation-delay: 5000ms;
 }
 
 @-webkit-keyframes sloganOne {
@@ -635,11 +635,11 @@ p {
     -webkit-transform: translate(0, -300%);
             transform: translate(0, -300%);
   }
-  25% {
+  20% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
-  85% {
+  90% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
@@ -654,11 +654,11 @@ p {
     -webkit-transform: translate(0, -300%);
             transform: translate(0, -300%);
   }
-  25% {
+  20% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
-  85% {
+  90% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
@@ -675,14 +675,14 @@ p {
           transform: translate(0, 400%);
   -webkit-animation-name: sloganTwo;
           animation-name: sloganTwo;
-  -webkit-animation-duration: 4000ms;
-          animation-duration: 4000ms;
+  -webkit-animation-duration: 5500ms;
+          animation-duration: 5500ms;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 4750ms;
-          animation-delay: 4750ms;
+  -webkit-animation-delay: 6000ms;
+          animation-delay: 6000ms;
 }
 
 @-webkit-keyframes sloganTwo {
@@ -690,7 +690,7 @@ p {
     -webkit-transform: translate(0, 400%);
             transform: translate(0, 400%);
   }
-  25% {
+  20% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
@@ -709,7 +709,7 @@ p {
     -webkit-transform: translate(0, 400%);
             transform: translate(0, 400%);
   }
-  25% {
+  20% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
@@ -729,14 +729,14 @@ p {
           transform: translate(0, 400%);
   -webkit-animation-name: sloganThre;
           animation-name: sloganThre;
-  -webkit-animation-duration: 4000ms;
-          animation-duration: 4000ms;
+  -webkit-animation-duration: 5000ms;
+          animation-duration: 5000ms;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 5000ms;
-          animation-delay: 5000ms;
+  -webkit-animation-delay: 7000ms;
+          animation-delay: 7000ms;
 }
 
 @-webkit-keyframes sloganThre {
@@ -744,11 +744,11 @@ p {
     -webkit-transform: translate(0, 400%);
             transform: translate(0, 400%);
   }
-  25% {
+  20% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
-  85% {
+  80% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
@@ -763,11 +763,11 @@ p {
     -webkit-transform: translate(0, 400%);
             transform: translate(0, 400%);
   }
-  25% {
+  20% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
-  85% {
+  80% {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
@@ -787,8 +787,8 @@ p {
           animation-timing-function: linear;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 5000ms;
-          animation-delay: 5000ms;
+  -webkit-animation-delay: 7000ms;
+          animation-delay: 7000ms;
 }
 
 @-webkit-keyframes banner {
