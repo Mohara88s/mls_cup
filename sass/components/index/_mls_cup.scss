@@ -113,7 +113,7 @@
     padding-left: 0.4vw;
     padding-right: 3vw;
     font-family: $main-font;
-    font-size: 4vw;
+    font-size: 4.1vw;
     line-height: 0.8;
     text-transform: uppercase;
     text-align: initial;
@@ -127,7 +127,7 @@
     p {
     color: $main-color;
     font-family: $main-font;
-    font-size: 2.15vw;
+    font-size: 2.2vw;
     
     }
     & .bannerInfo__date {
@@ -389,12 +389,12 @@ width: 100%;
 }
 .videoBox {
     position: absolute;
-    top: 48%;
+    top: 49%;
     left: 51%;
     transform: translate(-50%,-50%);
 }
 .video {
-    width: 59vw;
+    width: 60vw;
     height: auto;
     max-height: 100%;
 }
