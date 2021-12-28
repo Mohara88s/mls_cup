@@ -316,8 +316,8 @@ p {
           animation-name: overlay;
   -webkit-animation-duration: 2000ms;
           animation-duration: 2000ms;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
   -webkit-animation-delay: 500ms;
@@ -402,6 +402,132 @@ p {
     -webkit-transform: translate(-50%, 5%);
             transform: translate(-50%, 5%);
   }
+}
+
+.banner {
+  opacity: 0;
+  -webkit-animation-name: banner;
+          animation-name: banner;
+  -webkit-animation-duration: 100ms;
+          animation-duration: 100ms;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-delay: 7000ms;
+          animation-delay: 7000ms;
+}
+
+@-webkit-keyframes banner {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes banner {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.banner__pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.bannerInfo {
+  position: absolute;
+  top: 3%;
+  left: 2%;
+}
+
+.bannerInfo__teams {
+  margin-bottom: 2vw;
+}
+
+.bannerInfo__teams p {
+  background-color: #ffffff;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 0.5vw;
+  padding-top: 0.8vw;
+  padding-left: 0.4vw;
+  padding-right: 3vw;
+  font-family: "DINNextLTPro-Heavy", sans-serif;
+  font-size: 4vw;
+  line-height: 0.8;
+  text-transform: uppercase;
+  text-align: initial;
+  vertical-align: middle;
+}
+
+.bannerInfo__dateInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 1.5vw;
+}
+
+.bannerInfo__dateInfo p {
+  color: #ffffff;
+  font-family: "DINNextLTPro-Heavy", sans-serif;
+  font-size: 2.15vw;
+}
+
+.bannerInfo__dateInfo .bannerInfo__date {
+  font-family: "DINNextLTPro-Medium", sans-serif;
+}
+
+.bannerInfo__dateInfo .bannerInfo__dateStrip {
+  height: 1.5vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
+
+.bannerInfo__dateInfo .bannerInfo__time {
+  text-transform: uppercase;
+}
+
+.bannerInfo__liveOn {
+  width: 26vw;
+}
+
+.banner__emblem {
+  position: absolute;
+  bottom: 3%;
+  left: 2%;
+  width: 22vw;
+}
+
+.hotSpotButton {
+  position: absolute;
+  top: 12%;
+  right: 13%;
+  background: none;
+  border: none;
+}
+
+.hotSpotButton__picture {
+  margin-bottom: 0.8vw;
+  width: 5vw;
+}
+
+.hotSpotButton__caption {
+  color: #ffffff;
+  font-family: "DINNextLTPro-Heavy", sans-serif;
+  font-size: 1.7vw;
+  line-height: 0.8;
+  text-transform: uppercase;
+  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.75);
 }
 
 .leftDoor {
@@ -779,132 +905,6 @@ p {
   }
 }
 
-.banner {
-  opacity: 0;
-  -webkit-animation-name: banner;
-          animation-name: banner;
-  -webkit-animation-duration: 100ms;
-          animation-duration: 100ms;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-delay: 7000ms;
-          animation-delay: 7000ms;
-}
-
-@-webkit-keyframes banner {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes banner {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-.banner__pic {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.bannerInfo {
-  position: absolute;
-  top: 2%;
-  left: 1.5%;
-}
-
-.bannerInfo__teams {
-  margin-bottom: 2vw;
-}
-
-.bannerInfo__teams p {
-  background-color: #ffffff;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-bottom: 0.5vw;
-  padding-top: 0.5vw;
-  padding-left: 0.4vw;
-  padding-right: 2.5vw;
-  font-family: "DINNextLTPro-Heavy", sans-serif;
-  font-size: 3.5vw;
-  line-height: 0.8;
-  text-transform: uppercase;
-  text-align: initial;
-  vertical-align: middle;
-}
-
-.bannerInfo__dateInfo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 1.5vw;
-}
-
-.bannerInfo__dateInfo p {
-  color: #ffffff;
-  font-family: "DINNextLTPro-Heavy", sans-serif;
-  font-size: 2vw;
-}
-
-.bannerInfo__dateInfo .bannerInfo__date {
-  font-family: "DINNextLTPro-Medium", sans-serif;
-}
-
-.bannerInfo__dateInfo .bannerInfo__dateStrip {
-  height: 1.5vw;
-  margin-left: 1vw;
-  margin-right: 1vw;
-}
-
-.bannerInfo__dateInfo .bannerInfo__time {
-  text-transform: uppercase;
-}
-
-.bannerInfo__liveOn {
-  width: 26vw;
-}
-
-.banner__emblem {
-  position: absolute;
-  bottom: 1.5%;
-  left: 1.5%;
-  width: 22vw;
-}
-
-.hotSpotButton {
-  position: absolute;
-  top: 12%;
-  right: 13%;
-  background: none;
-  border: none;
-}
-
-.hotSpotButton__picture {
-  margin-bottom: 0.8vw;
-  width: 5vw;
-}
-
-.hotSpotButton__caption {
-  color: #ffffff;
-  font-family: "DINNextLTPro-Heavy", sans-serif;
-  font-size: 1.7vw;
-  line-height: 0.8;
-  text-transform: uppercase;
-  text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.75);
-}
-
 .videoBackdrop {
   position: absolute;
   top: 0;
@@ -916,14 +916,14 @@ p {
 
 .videoBox {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 48%;
+  left: 51%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
 .video {
-  width: 60vw;
+  width: 59vw;
   height: auto;
   max-height: 100%;
 }
@@ -936,10 +936,15 @@ p {
           transform: translate(50%, -50%);
   background: none;
   border: none;
+  opacity: 1;
 }
 
 .videoPlayButton__picture {
   width: 8vw;
+}
+
+.videoPlayButton--transparent {
+  opacity: 0.15;
 }
 
 .videoCloseButton {

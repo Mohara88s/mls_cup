@@ -24,13 +24,16 @@ const refs = {
       refs.videoBackdrop.classList.add('is-hidden')
       refs.hotSpotBtn.classList.remove('is-hidden')
       refs.video.pause() 
+      refs.videoPlayBtn.classList.remove('videoPlayButton--transparent')
   }
 
   refs.videoPlayBtn.addEventListener('click', onVideoPlayBtnClick)
   function onVideoPlayBtnClick() {
       if (refs.video.paused) {
         refs.video.play() 
+        refs.videoPlayBtn.classList.add('videoPlayButton--transparent')
       } else {
-        refs.video.pause()  
+        refs.video.pause()
+        refs.videoPlayBtn.classList.remove('videoPlayButton--transparent')  
       }
   }

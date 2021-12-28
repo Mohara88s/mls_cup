@@ -9,6 +9,8 @@
     // border: 1px solid red;
     overflow: hidden;
 }
+
+// overlay & cup hoist & confetti
 .overlay {
     position: absolute;
     bottom:0;
@@ -24,7 +26,7 @@
 
     animation-name: overlay;
     animation-duration: 2000ms;
-    animation-timing-function: linear;
+    animation-timing-function: ease;
     animation-fill-mode: forwards;
     animation-delay: 500ms;
 
@@ -69,6 +71,109 @@
       }
   }
 }
+
+// banner & banner info & hotspot button
+.banner {
+    opacity: 0;
+    animation-name: banner;
+    animation-duration: 100ms;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-delay: 7000ms;
+    
+    @keyframes banner {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+}
+
+.banner__pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.bannerInfo{
+    position: absolute;
+    top: 3%;
+    left: 2%;
+}
+
+.bannerInfo__teams { 
+    margin-bottom: 2vw;
+    p {
+    background-color: $main-color;
+    width: fit-content;
+    margin-bottom: 0.5vw;
+    padding-top: 0.8vw;
+    padding-left: 0.4vw;
+    padding-right: 3vw;
+    font-family: $main-font;
+    font-size: 4vw;
+    line-height: 0.8;
+    text-transform: uppercase;
+    text-align: initial;
+    vertical-align: middle;
+}
+}
+
+.bannerInfo__dateInfo {
+    display: flex;
+    margin-bottom: 1.5vw;
+    p {
+    color: $main-color;
+    font-family: $main-font;
+    font-size: 2.15vw;
+    
+    }
+    & .bannerInfo__date {
+        font-family: $additional-font;
+    }
+    & .bannerInfo__dateStrip {
+        height: 1.5vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+    & .bannerInfo__time {
+        text-transform: uppercase;
+    }
+}
+.bannerInfo__liveOn {
+    width: 26vw;
+}
+.banner__emblem {
+    position: absolute;
+    bottom: 3%;
+    left: 2%;
+    width: 22vw;
+    }
+.hotSpotButton {
+    position: absolute;
+    top: 12%;
+    right: 13%;
+    background: none;
+    border: none;
+
+    &__picture{
+        margin-bottom: 0.8vw;
+        width: 5vw;
+    }
+
+    &__caption {
+        color: $main-color;
+        font-family: $main-font;
+        font-size: 1.7vw;
+        line-height: 0.8;
+        text-transform: uppercase;
+        text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.75);
+    }
+}
+
+// doors & doors emblems & slogan
 .leftDoor {
     position: absolute;
     top: 0;
@@ -271,106 +376,8 @@ width: 100%;
     }
     
 }
-.banner {
-    opacity: 0;
-    animation-name: banner;
-    animation-duration: 100ms;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-delay: 7000ms;
-    
-    @keyframes banner {
-        0%{
-            opacity: 0;
-        }
-        100%{
-            opacity: 1;
-        }
-    }
-}
 
-.banner__pic {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-.bannerInfo{
-    position: absolute;
-    top: 2%;
-    left: 1.5%;
-}
-
-.bannerInfo__teams { 
-    margin-bottom: 2vw;
-    p {
-    background-color: $main-color;
-    width: fit-content;
-    margin-bottom: 0.5vw;
-    padding-top: 0.5vw;
-    padding-left: 0.4vw;
-    padding-right: 2.5vw;
-    font-family: $main-font;
-    font-size: 3.5vw;
-    line-height: 0.8;
-    text-transform: uppercase;
-    text-align: initial;
-    vertical-align: middle;
-}
-}
-
-.bannerInfo__dateInfo {
-    display: flex;
-    margin-bottom: 1.5vw;
-    p {
-    color: $main-color;
-    font-family: $main-font;
-    font-size: 2vw;
-    
-    }
-    & .bannerInfo__date {
-        font-family: $additional-font;
-    }
-    & .bannerInfo__dateStrip {
-        height: 1.5vw;
-        margin-left: 1vw;
-        margin-right: 1vw;
-    }
-    & .bannerInfo__time {
-        text-transform: uppercase;
-    }
-}
-.bannerInfo__liveOn {
-    width: 26vw;
-}
-.banner__emblem {
-    position: absolute;
-    bottom: 1.5%;
-    left: 1.5%;
-    width: 22vw;
-    }
-.hotSpotButton {
-    position: absolute;
-    top: 12%;
-    right: 13%;
-    background: none;
-    border: none;
-
-    &__picture{
-        margin-bottom: 0.8vw;
-        width: 5vw;
-    }
-
-    &__caption {
-        color: $main-color;
-        font-family: $main-font;
-        font-size: 1.7vw;
-        line-height: 0.8;
-        text-transform: uppercase;
-        text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.75);
-    }
-}
-
+// video & controls
 .videoBackdrop {
     position: absolute;
     top: 0;
@@ -382,12 +389,12 @@ width: 100%;
 }
 .videoBox {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 48%;
+    left: 51%;
     transform: translate(-50%,-50%);
 }
 .video {
-    width: 60vw;
+    width: 59vw;
     height: auto;
     max-height: 100%;
 }
@@ -399,8 +406,12 @@ width: 100%;
     transform: translate(+50%,-50%);
     background: none;
     border: none;
+    opacity: 1;
     &__picture{
         width: 8vw;
+    }
+    &--transparent {
+        opacity: 0.15;
     }
 }
 .videoCloseButton {
