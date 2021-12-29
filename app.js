@@ -10,7 +10,8 @@ const refs = {
   
   refs.mlsCupCloseBtn.addEventListener('click', onMlsCupCloseBtnClick)
   function onMlsCupCloseBtnClick() {
-    refs.mlsCup.setAttribute("hidden", true);
+    refs.mlsCup.classList.add('is-hidden')
+    onVideoCloseBtnClick()
   }
 
   refs.hotSpotBtn.addEventListener('click', onHotSpotBtnClick)
@@ -37,3 +38,9 @@ const refs = {
         refs.videoPlayBtn.classList.remove('videoPlayButton--transparent')  
       }
   }
+
+
+
+  window.addEventListener("load", function(){
+    refs.mlsCup.classList.remove('is-hidden')
+});

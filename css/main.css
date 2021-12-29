@@ -370,8 +370,8 @@ p {
           animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation-delay: 1800ms;
-          animation-delay: 1800ms;
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
 }
 
 @-webkit-keyframes confetti {
