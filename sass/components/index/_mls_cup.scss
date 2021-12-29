@@ -157,6 +157,9 @@
     right: 13%;
     background: none;
     border: none;
+    &:hover {
+        cursor: pointer;
+    }
 
     &__picture{
         margin-bottom: 0.8vw;
@@ -407,6 +410,10 @@ width: 100%;
     background: none;
     border: none;
     opacity: 1;
+    &:hover {
+        cursor: pointer;
+    }
+
     &__picture{
         width: 8vw;
     }
@@ -421,6 +428,10 @@ width: 100%;
     transform: translate(+50%,-50%);
     background: none;
     border: none;
+    &:hover {
+        cursor: pointer;
+    }
+
     &__picture{
         width: 6vw;
     }
@@ -431,6 +442,10 @@ width: 100%;
     right: 5px;
     background: none;
     border: none;
+    &:hover {
+        cursor: pointer;
+    }
+    
     &__picture{
         width: 2.8vw;
     }

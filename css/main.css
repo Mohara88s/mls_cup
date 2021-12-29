@@ -516,6 +516,10 @@ p {
   border: none;
 }
 
+.hotSpotButton:hover {
+  cursor: pointer;
+}
+
 .hotSpotButton__picture {
   margin-bottom: 0.8vw;
   width: 5vw;
@@ -939,6 +943,10 @@ p {
   opacity: 1;
 }
 
+.videoPlayButton:hover {
+  cursor: pointer;
+}
+
 .videoPlayButton__picture {
   width: 8vw;
 }
@@ -957,6 +965,10 @@ p {
   border: none;
 }
 
+.videoCloseButton:hover {
+  cursor: pointer;
+}
+
 .videoCloseButton__picture {
   width: 6vw;
 }
@@ -967,6 +979,10 @@ p {
   right: 5px;
   background: none;
   border: none;
+}
+
+.mlsCupCloseButton:hover {
+  cursor: pointer;
 }
 
 .mlsCupCloseButton__picture {
