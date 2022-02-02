@@ -1,3 +1,5 @@
+var tl = gsap.timeline();
+
 const refs = {
     mlsCupCloseBtn: document.querySelector('.mlsCupCloseButton'),
     mlsCup: document.querySelector('.mlsCup'),
@@ -7,28 +9,29 @@ const refs = {
     videoPlayBtn: document.querySelector('.videoPlayButton'),  
     video: document.querySelector('.video'),  
 };
-  
+  window.addEventListener("load", animation);
   refs.mlsCupCloseBtn.addEventListener('click', onMlsCupCloseBtnClick)
+  refs.hotSpotBtn.addEventListener('click', onHotSpotBtnClick)
+  refs.videoCloseBtn.addEventListener('click', onVideoCloseBtnClick)
+  refs.videoPlayBtn.addEventListener('click', onVideoPlayBtnClick)
+
   function onMlsCupCloseBtnClick() {
     refs.mlsCup.classList.add('is-hidden')
     onVideoCloseBtnClick()
   }
 
-  refs.hotSpotBtn.addEventListener('click', onHotSpotBtnClick)
   function onHotSpotBtnClick() {
       refs.videoBackdrop.classList.remove('is-hidden')
       refs.hotSpotBtn.classList.add('is-hidden')
   }
 
-  refs.videoCloseBtn.addEventListener('click', onVideoCloseBtnClick)
   function onVideoCloseBtnClick() {
       refs.videoBackdrop.classList.add('is-hidden')
       refs.hotSpotBtn.classList.remove('is-hidden')
       refs.video.pause() 
       refs.videoPlayBtn.classList.remove('videoPlayButton--transparent')
   }
-
-  refs.videoPlayBtn.addEventListener('click', onVideoPlayBtnClick)
+ 
   function onVideoPlayBtnClick() {
       if (refs.video.paused) {
         refs.video.play() 
@@ -39,8 +42,7 @@ const refs = {
       }
   }
 
-  window.addEventListener("load", function(){
-    var tl = gsap.timeline();
+  function animation() {
     tl.to(".mlsCup",{duration: 1, opacity:1})
       .to(".overlay",{duration: 2, y:0})
       .to(".confetti",{duration: 3.5, yPercent:-145, ease: "back.out(1.15)",}, "-=1")
@@ -55,5 +57,4 @@ const refs = {
       .to(".sloganList",{duration: 1.5, yPercent:-300}, "+=2")
       .to(".leftDoor",{duration: 2, xPercent:-100}, "-=1")
       .to(".rightDoor",{duration: 2, xPercent:100}, "-=2")
-});
-
+}
