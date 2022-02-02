@@ -6,8 +6,8 @@
     top: 0;
     width: 100%;
     height: 51.5vw;
-    // border: 1px solid red;
     overflow: hidden;
+    opacity: 0;
 }
 
 // overlay & cup hoist & confetti
@@ -23,21 +23,6 @@
         #00000000 ,
         #00000080 
     );
-
-    animation-name: overlay;
-    animation-duration: 2000ms;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-    animation-delay: 500ms;
-
-@keyframes overlay {
-    0%{
-      transform: translateY(+150%);
-    }
-    100%{
-      transform: translateY(+0%);
-    }
-  }
 }
 .cupHoist {
     position: absolute;
@@ -52,43 +37,11 @@
     left: 53%;
     transform: translate(-50%,+150%);
     width: 107vw;
-
-    animation-name: confetti;
-    animation-duration: 3500ms;
-    animation-timing-function: ease;
-    animation-fill-mode: forwards;
-    animation-delay: 1500ms;
-
-@keyframes confetti {
-    0%{
-      transform: translate(-50%,+150%);
-    }
-    60%{
-      transform: translate(-50%,-5%);
-    }
-    100%{
-        transform: translate(-50%,+5%);
-      }
-  }
 }
 
 // banner & banner info & hotspot button
 .banner {
     opacity: 0;
-    animation-name: banner;
-    animation-duration: 100ms;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-delay: 7000ms;
-    
-    @keyframes banner {
-        0%{
-            opacity: 0;
-        }
-        100%{
-            opacity: 1;
-        }
-    }
 }
 
 .banner__pic {
@@ -188,27 +141,6 @@
         #00000033 ,
         #00000000 
     );
-
-    animation-name: leftdoor;
-    animation-duration: 10500ms;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-delay: 3000ms;
-    
-@keyframes leftdoor {
-    0%{
-      transform: translate(-100%,0);
-    }
-    15%{
-        transform: translate(0,0);
-    }
-    85%{
-        transform: translate(0,0);
-    }
-    100%{
-      transform: translate(-100%,0);
-    }
-  }
 }
 .leftDoor__pic {
 width: 100%;
@@ -218,24 +150,8 @@ width: 100%;
     top: 29%;
     left: 9%;
     width: 19vw;
-    transform: scale(2.5);
+    transform: scale(3);
     opacity: 0;
-    animation-name: emblem;
-    animation-duration: 1000ms;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-delay: 8000ms;
-
-    @keyframes emblem {
-        0%{
-            transform: scale(2.5);
-            opacity: 0;
-        }
-        100%{
-            transform: scale(1);
-            opacity: 1;
-        }
-    }
 }
 .rightDoor {
     position: absolute;
@@ -248,27 +164,6 @@ width: 100%;
         #00000033 ,
         #00000000 
     );
-
-    animation-name: rightdoor;
-    animation-duration: 10500ms;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-delay: 3000ms;
-
-@keyframes rightdoor {
-    0%{
-      transform: translate(+100%,0);
-    }
-    15%{
-        transform: translate(0,0);
-    }
-    85%{
-        transform: translate(0,0);
-    }
-    100%{
-      transform: translate(+100%,0);
-    }
-  }
 }
 
 .rightDoor__pic {
@@ -278,15 +173,9 @@ width: 100%;
     position: absolute;
     top: 29%;
     right: 9%;
-    transform: translate(0,+50%);
     width: 20vw;
-    transform: scale(1);
+    transform: scale(3);
     opacity: 0;
-    animation-name: emblem;
-    animation-duration: 1000ms;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    animation-delay: 8000ms;
 }
 .sloganList{
     position: absolute;
@@ -306,78 +195,16 @@ width: 100%;
         font-size: 14vw;
         line-height: 0.7;
         transform: translate(0,-300%);
-        animation-name: sloganOne;
-        animation-duration: 6000ms;
-        animation-timing-function: linear;
-        animation-fill-mode: forwards;
-        animation-delay: 5000ms;
-
-    @keyframes sloganOne {
-        0%{
-        transform: translate(0,-300%);
-        }
-        20%{
-            transform: translate(0,0);
-        }
-        90%{
-            transform: translate(0,0);
-        }
-        100%{
-        transform: translate(0,-300%);
-        }
-    }
     }
     .sloganList__item:nth-child(2) {
         font-size: 10.5vw;
         line-height: 0.8;
         transform: translate(0,+400%);
-        animation-name: sloganTwo;
-        animation-duration: 5500ms;
-        animation-timing-function: linear;
-        animation-fill-mode: forwards;
-        animation-delay: 6000ms;
-
-    @keyframes sloganTwo {
-        0%{
-        transform: translate(0,+400%);
-        }
-        20%{
-            transform: translate(0,0);
-        }
-        85%{
-            transform: translate(0,0);
-        }
-        100%{
-        transform: translate(0,-400%);
-        }
     }
     }
     .sloganList__item:last-child {
         font-size: 6vw;
         transform: translate(0,+400%);
-
-        animation-name: sloganThre;
-        animation-duration: 5000ms;
-        animation-timing-function: linear;
-        animation-fill-mode: forwards;
-        animation-delay: 7000ms;
-
-    @keyframes sloganThre {
-        0%{
-        transform: translate(0,+400%);
-        }
-        20%{
-            transform: translate(0,0);
-        }
-        80%{
-            transform: translate(0,0);
-        }
-        100%{
-        transform: translate(0,-600%);
-        }
-    }
-    }
-    
 }
 
 // video & controls

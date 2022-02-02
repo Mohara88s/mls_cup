@@ -300,6 +300,7 @@ p {
   width: 100%;
   height: 51.5vw;
   overflow: hidden;
+  opacity: 0;
 }
 
 .overlay {
@@ -312,38 +313,6 @@ p {
   height: 80%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#00000000), to(#00000080));
   background-image: linear-gradient(to bottom, #00000000, #00000080);
-  -webkit-animation-name: overlay;
-          animation-name: overlay;
-  -webkit-animation-duration: 2000ms;
-          animation-duration: 2000ms;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-delay: 500ms;
-          animation-delay: 500ms;
-}
-
-@-webkit-keyframes overlay {
-  0% {
-    -webkit-transform: translateY(150%);
-            transform: translateY(150%);
-  }
-  100% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-}
-
-@keyframes overlay {
-  0% {
-    -webkit-transform: translateY(150%);
-            transform: translateY(150%);
-  }
-  100% {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
 }
 
 .cupHoist {
@@ -362,78 +331,10 @@ p {
   -webkit-transform: translate(-50%, 150%);
           transform: translate(-50%, 150%);
   width: 107vw;
-  -webkit-animation-name: confetti;
-          animation-name: confetti;
-  -webkit-animation-duration: 3500ms;
-          animation-duration: 3500ms;
-  -webkit-animation-timing-function: ease;
-          animation-timing-function: ease;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-delay: 1500ms;
-          animation-delay: 1500ms;
-}
-
-@-webkit-keyframes confetti {
-  0% {
-    -webkit-transform: translate(-50%, 150%);
-            transform: translate(-50%, 150%);
-  }
-  60% {
-    -webkit-transform: translate(-50%, -5%);
-            transform: translate(-50%, -5%);
-  }
-  100% {
-    -webkit-transform: translate(-50%, 5%);
-            transform: translate(-50%, 5%);
-  }
-}
-
-@keyframes confetti {
-  0% {
-    -webkit-transform: translate(-50%, 150%);
-            transform: translate(-50%, 150%);
-  }
-  60% {
-    -webkit-transform: translate(-50%, -5%);
-            transform: translate(-50%, -5%);
-  }
-  100% {
-    -webkit-transform: translate(-50%, 5%);
-            transform: translate(-50%, 5%);
-  }
 }
 
 .banner {
   opacity: 0;
-  -webkit-animation-name: banner;
-          animation-name: banner;
-  -webkit-animation-duration: 100ms;
-          animation-duration: 100ms;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-delay: 7000ms;
-          animation-delay: 7000ms;
-}
-
-@-webkit-keyframes banner {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes banner {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .banner__pic {
@@ -543,54 +444,6 @@ p {
           transform: translate(-100%, 0);
   background-image: -webkit-gradient(linear, left top, right top, from(#00000033), to(#00000000));
   background-image: linear-gradient(to right, #00000033, #00000000);
-  -webkit-animation-name: leftdoor;
-          animation-name: leftdoor;
-  -webkit-animation-duration: 10500ms;
-          animation-duration: 10500ms;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-delay: 3000ms;
-          animation-delay: 3000ms;
-}
-
-@-webkit-keyframes leftdoor {
-  0% {
-    -webkit-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
-  }
-  15% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  85% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  100% {
-    -webkit-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
-  }
-}
-
-@keyframes leftdoor {
-  0% {
-    -webkit-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
-  }
-  15% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  85% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  100% {
-    -webkit-transform: translate(-100%, 0);
-            transform: translate(-100%, 0);
-  }
 }
 
 .leftDoor__pic {
@@ -602,45 +455,9 @@ p {
   top: 29%;
   left: 9%;
   width: 19vw;
-  -webkit-transform: scale(2.5);
-          transform: scale(2.5);
+  -webkit-transform: scale(3);
+          transform: scale(3);
   opacity: 0;
-  -webkit-animation-name: emblem;
-          animation-name: emblem;
-  -webkit-animation-duration: 1000ms;
-          animation-duration: 1000ms;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-delay: 8000ms;
-          animation-delay: 8000ms;
-}
-
-@-webkit-keyframes emblem {
-  0% {
-    -webkit-transform: scale(2.5);
-            transform: scale(2.5);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
-}
-
-@keyframes emblem {
-  0% {
-    -webkit-transform: scale(2.5);
-            transform: scale(2.5);
-    opacity: 0;
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 1;
-  }
 }
 
 .rightDoor {
@@ -652,54 +469,6 @@ p {
           transform: translate(100%, 0);
   background-image: -webkit-gradient(linear, right top, left top, from(#00000033), to(#00000000));
   background-image: linear-gradient(to left, #00000033, #00000000);
-  -webkit-animation-name: rightdoor;
-          animation-name: rightdoor;
-  -webkit-animation-duration: 10500ms;
-          animation-duration: 10500ms;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-delay: 3000ms;
-          animation-delay: 3000ms;
-}
-
-@-webkit-keyframes rightdoor {
-  0% {
-    -webkit-transform: translate(100%, 0);
-            transform: translate(100%, 0);
-  }
-  15% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  85% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  100% {
-    -webkit-transform: translate(100%, 0);
-            transform: translate(100%, 0);
-  }
-}
-
-@keyframes rightdoor {
-  0% {
-    -webkit-transform: translate(100%, 0);
-            transform: translate(100%, 0);
-  }
-  15% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  85% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  100% {
-    -webkit-transform: translate(100%, 0);
-            transform: translate(100%, 0);
-  }
 }
 
 .rightDoor__pic {
@@ -710,22 +479,10 @@ p {
   position: absolute;
   top: 29%;
   right: 9%;
-  -webkit-transform: translate(0, 50%);
-          transform: translate(0, 50%);
   width: 20vw;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  -webkit-transform: scale(3);
+          transform: scale(3);
   opacity: 0;
-  -webkit-animation-name: emblem;
-          animation-name: emblem;
-  -webkit-animation-duration: 1000ms;
-          animation-duration: 1000ms;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-delay: 8000ms;
-          animation-delay: 8000ms;
 }
 
 .sloganList {
@@ -750,54 +507,6 @@ p {
   line-height: 0.7;
   -webkit-transform: translate(0, -300%);
           transform: translate(0, -300%);
-  -webkit-animation-name: sloganOne;
-          animation-name: sloganOne;
-  -webkit-animation-duration: 6000ms;
-          animation-duration: 6000ms;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-delay: 5000ms;
-          animation-delay: 5000ms;
-}
-
-@-webkit-keyframes sloganOne {
-  0% {
-    -webkit-transform: translate(0, -300%);
-            transform: translate(0, -300%);
-  }
-  20% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  90% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  100% {
-    -webkit-transform: translate(0, -300%);
-            transform: translate(0, -300%);
-  }
-}
-
-@keyframes sloganOne {
-  0% {
-    -webkit-transform: translate(0, -300%);
-            transform: translate(0, -300%);
-  }
-  20% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  90% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  100% {
-    -webkit-transform: translate(0, -300%);
-            transform: translate(0, -300%);
-  }
 }
 
 .sloganList .sloganList__item:nth-child(2) {
@@ -805,108 +514,12 @@ p {
   line-height: 0.8;
   -webkit-transform: translate(0, 400%);
           transform: translate(0, 400%);
-  -webkit-animation-name: sloganTwo;
-          animation-name: sloganTwo;
-  -webkit-animation-duration: 5500ms;
-          animation-duration: 5500ms;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-delay: 6000ms;
-          animation-delay: 6000ms;
 }
 
-@-webkit-keyframes sloganTwo {
-  0% {
-    -webkit-transform: translate(0, 400%);
-            transform: translate(0, 400%);
-  }
-  20% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  85% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  100% {
-    -webkit-transform: translate(0, -400%);
-            transform: translate(0, -400%);
-  }
-}
-
-@keyframes sloganTwo {
-  0% {
-    -webkit-transform: translate(0, 400%);
-            transform: translate(0, 400%);
-  }
-  20% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  85% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  100% {
-    -webkit-transform: translate(0, -400%);
-            transform: translate(0, -400%);
-  }
-}
-
-.sloganList .sloganList__item:last-child {
+.sloganList__item:last-child {
   font-size: 6vw;
   -webkit-transform: translate(0, 400%);
           transform: translate(0, 400%);
-  -webkit-animation-name: sloganThre;
-          animation-name: sloganThre;
-  -webkit-animation-duration: 5000ms;
-          animation-duration: 5000ms;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  -webkit-animation-delay: 7000ms;
-          animation-delay: 7000ms;
-}
-
-@-webkit-keyframes sloganThre {
-  0% {
-    -webkit-transform: translate(0, 400%);
-            transform: translate(0, 400%);
-  }
-  20% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  80% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  100% {
-    -webkit-transform: translate(0, -600%);
-            transform: translate(0, -600%);
-  }
-}
-
-@keyframes sloganThre {
-  0% {
-    -webkit-transform: translate(0, 400%);
-            transform: translate(0, 400%);
-  }
-  20% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  80% {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-  }
-  100% {
-    -webkit-transform: translate(0, -600%);
-            transform: translate(0, -600%);
-  }
 }
 
 .videoBackdrop {
